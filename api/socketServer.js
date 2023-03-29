@@ -1,4 +1,4 @@
-const users = [];
+
 const SocketServer = (socket) => {
   console.log(`⚡: ${socket.id} user just connected!`);
   socket.on("join_room", ({ user_id, room_id }) => {

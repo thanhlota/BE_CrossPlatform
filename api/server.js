@@ -60,11 +60,6 @@ app.use(function (err, req, res, next) {
 
 const port = process.env.PORT || 5000;
 http.listen(port, () => console.log(`Server is running on port ${port}`));
-//middleware checking the user
-// io.on("connection", (socket) => {
-//   SocketServer(socket);
-// });
-let savedroom_id, saveduser_id;
 io.on("connection", (socket) => {
   SocketServer(socket);
 });
