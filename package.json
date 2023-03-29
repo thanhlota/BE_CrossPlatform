@@ -1,0 +1,33 @@
+{
+  "name": "socialnetwork",
+  "version": "1.0.0",
+  "description": "the api ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node api/server.js",
+    "server": "nodemon api/server.js"
+  },
+  "author": "team20201",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^5.3.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.18.2",
+    "firebase": "^9.14.0",
+    "firebase-admin": "^11.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.10.7",
+    "multer": "^1.4.2",
+    "ngrok": "^4.3.3",
+    "nodemon": "^2.0.20",
+    "socket.io": "^4.6.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "./node_modules/*"
+    ]
+  }
+}
